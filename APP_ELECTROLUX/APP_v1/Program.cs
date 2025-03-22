@@ -16,7 +16,7 @@ namespace APP_v1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Conexão());
+            Application.Run(new Conexao());
         }
     }
 }

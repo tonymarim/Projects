@@ -1,6 +1,6 @@
 ﻿namespace APP_v1
 {
-    partial class Conexão
+    partial class Conexao
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Conexão));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Conexao));
             this.btGateway = new System.Windows.Forms.Button();
             this.btModbus = new System.Windows.Forms.Button();
             this.btPulso = new System.Windows.Forms.Button();
@@ -49,17 +49,19 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.btConnect = new System.Windows.Forms.Button();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.toolStripButtonAbout = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonRefresh = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.toolStrip2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btGateway
             // 
             this.btGateway.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btGateway.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btGateway.Location = new System.Drawing.Point(266, 73);
+            this.btGateway.Location = new System.Drawing.Point(350, 73);
             this.btGateway.Name = "btGateway";
             this.btGateway.Size = new System.Drawing.Size(136, 41);
             this.btGateway.TabIndex = 2;
@@ -71,7 +73,7 @@
             // 
             this.btModbus.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btModbus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btModbus.Location = new System.Drawing.Point(428, 73);
+            this.btModbus.Location = new System.Drawing.Point(512, 73);
             this.btModbus.Name = "btModbus";
             this.btModbus.Size = new System.Drawing.Size(136, 41);
             this.btModbus.TabIndex = 3;
@@ -82,7 +84,7 @@
             // 
             this.btPulso.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btPulso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btPulso.Location = new System.Drawing.Point(592, 73);
+            this.btPulso.Location = new System.Drawing.Point(676, 73);
             this.btPulso.Name = "btPulso";
             this.btPulso.Size = new System.Drawing.Size(136, 41);
             this.btPulso.TabIndex = 4;
@@ -94,7 +96,7 @@
             this.toolStrip1.BackColor = System.Drawing.Color.Transparent;
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1,
+            this.toolStripButtonAbout,
             this.toolStripComboBoxPortName,
             this.toolStripSeparator1,
             this.toolStripComboBoxBaudRate,
@@ -194,7 +196,7 @@
             // btConnect
             // 
             this.btConnect.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btConnect.Location = new System.Drawing.Point(19, 73);
+            this.btConnect.Location = new System.Drawing.Point(162, 73);
             this.btConnect.Name = "btConnect";
             this.btConnect.Size = new System.Drawing.Size(136, 41);
             this.btConnect.TabIndex = 8;
@@ -202,14 +204,25 @@
             this.btConnect.UseVisualStyleBackColor = true;
             this.btConnect.Click += new System.EventHandler(this.btConnect_Click);
             // 
-            // toolStripButton1
+            // pictureBox1
             // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = global::APP_v1.Properties.Resources._6372970_about_detail_faq_help_info_icon;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(24, 24);
-            this.toolStripButton1.Text = "toolStripButton1";
+            this.pictureBox1.Image = global::APP_v1.Properties.Resources._4373268_bit_connect_logo_logos_icon1;
+            this.pictureBox1.Location = new System.Drawing.Point(24, 40);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(120, 109);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
+            // toolStripButtonAbout
+            // 
+            this.toolStripButtonAbout.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButtonAbout.Image = global::APP_v1.Properties.Resources._6372970_about_detail_faq_help_info_icon;
+            this.toolStripButtonAbout.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonAbout.Name = "toolStripButtonAbout";
+            this.toolStripButtonAbout.Size = new System.Drawing.Size(24, 24);
+            this.toolStripButtonAbout.Text = "Sobre";
+            this.toolStripButtonAbout.Click += new System.EventHandler(this.toolStripAbout_Click);
             // 
             // toolStripButtonRefresh
             // 
@@ -219,15 +232,15 @@
             this.toolStripButtonRefresh.Name = "toolStripButtonRefresh";
             this.toolStripButtonRefresh.Size = new System.Drawing.Size(24, 24);
             this.toolStripButtonRefresh.Text = "toolStripButton2";
-            this.toolStripButtonRefresh.Click += new System.EventHandler(this.toolStripButtonRefresh_Click_1);
             // 
-            // Conexão
+            // Conexao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(838, 184);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btConnect);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.toolStrip2);
@@ -237,12 +250,13 @@
             this.Controls.Add(this.btGateway);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Conexão";
+            this.Name = "Conexao";
             this.Text = "Cadastrar Dispositivo";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.toolStrip2.ResumeLayout(false);
             this.toolStrip2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -253,7 +267,7 @@
         private System.Windows.Forms.Button btModbus;
         private System.Windows.Forms.Button btPulso;
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton toolStripButtonAbout;
         private System.Windows.Forms.ToolStripComboBox toolStripComboBoxPortName;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripComboBox toolStripComboBoxBaudRate;
@@ -270,6 +284,7 @@
         private System.Windows.Forms.ToolStripButton toolStripButtonRefresh;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btConnect;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
